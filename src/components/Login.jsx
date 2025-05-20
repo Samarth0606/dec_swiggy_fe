@@ -7,7 +7,7 @@ function Login(props) {
   const [isSignUp, setIsSignUp] = useState(true);
 
   function handleRegister() {
-    let response = fetch("http://localhost:8000/api/register",{
+    let response = fetch("https://dec-swiggy-be.onrender.com/api/register",{
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -32,7 +32,7 @@ function Login(props) {
   }
 
   function handleLogin() {
-    let response = fetch("http://localhost:8000/api/login",{
+    let response = fetch("https://dec-swiggy-be.onrender.com/api/login",{
       method: "POST",
       headers: {
         "Content-Type": "application/json",
